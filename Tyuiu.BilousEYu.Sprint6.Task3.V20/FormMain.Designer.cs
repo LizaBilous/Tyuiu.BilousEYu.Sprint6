@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.BilousEYu.Sprint6.Task3.V20
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxTask = new GroupBox();
             textBoxTask = new TextBox();
             groupBoxOutput = new GroupBox();
@@ -48,30 +47,35 @@
             // groupBoxTask
             // 
             groupBoxTask.Controls.Add(textBoxTask);
-            groupBoxTask.Location = new Point(12, 12);
+            groupBoxTask.Location = new Point(14, 16);
+            groupBoxTask.Margin = new Padding(3, 4, 3, 4);
             groupBoxTask.Name = "groupBoxTask";
-            groupBoxTask.Size = new Size(541, 426);
+            groupBoxTask.Padding = new Padding(3, 4, 3, 4);
+            groupBoxTask.Size = new Size(618, 568);
             groupBoxTask.TabIndex = 0;
             groupBoxTask.TabStop = false;
             groupBoxTask.Text = "Условие";
             // 
             // textBoxTask
             // 
-            textBoxTask.Location = new Point(6, 22);
+            textBoxTask.Location = new Point(7, 29);
+            textBoxTask.Margin = new Padding(3, 4, 3, 4);
             textBoxTask.Multiline = true;
             textBoxTask.Name = "textBoxTask";
             textBoxTask.ReadOnly = true;
-            textBoxTask.Size = new Size(529, 398);
+            textBoxTask.Size = new Size(604, 529);
             textBoxTask.TabIndex = 0;
-            textBoxTask.Text = resources.GetString("textBoxTask.Text");
+            textBoxTask.TextChanged += textBoxTask_TextChanged;
             // 
             // groupBoxOutput
             // 
             groupBoxOutput.Controls.Add(dataGridViewResultMatrix);
             groupBoxOutput.Controls.Add(textBoxNameResult);
-            groupBoxOutput.Location = new Point(1088, 12);
+            groupBoxOutput.Location = new Point(1243, 16);
+            groupBoxOutput.Margin = new Padding(3, 4, 3, 4);
             groupBoxOutput.Name = "groupBoxOutput";
-            groupBoxOutput.Size = new Size(490, 426);
+            groupBoxOutput.Padding = new Padding(3, 4, 3, 4);
+            groupBoxOutput.Size = new Size(560, 568);
             groupBoxOutput.TabIndex = 1;
             groupBoxOutput.TabStop = false;
             groupBoxOutput.Text = "Вывод данных";
@@ -82,29 +86,33 @@
             dataGridViewResultMatrix.AllowUserToDeleteRows = false;
             dataGridViewResultMatrix.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewResultMatrix.ColumnHeadersVisible = false;
-            dataGridViewResultMatrix.Location = new Point(6, 44);
+            dataGridViewResultMatrix.Location = new Point(7, 59);
+            dataGridViewResultMatrix.Margin = new Padding(3, 4, 3, 4);
             dataGridViewResultMatrix.Name = "dataGridViewResultMatrix";
             dataGridViewResultMatrix.ReadOnly = true;
             dataGridViewResultMatrix.RowHeadersVisible = false;
-            dataGridViewResultMatrix.Size = new Size(478, 370);
+            dataGridViewResultMatrix.RowHeadersWidth = 51;
+            dataGridViewResultMatrix.Size = new Size(546, 493);
             dataGridViewResultMatrix.TabIndex = 1;
             // 
             // textBoxNameResult
             // 
             textBoxNameResult.BorderStyle = BorderStyle.None;
-            textBoxNameResult.Location = new Point(6, 22);
+            textBoxNameResult.Location = new Point(7, 29);
+            textBoxNameResult.Margin = new Padding(3, 4, 3, 4);
             textBoxNameResult.Name = "textBoxNameResult";
             textBoxNameResult.ReadOnly = true;
-            textBoxNameResult.Size = new Size(100, 16);
+            textBoxNameResult.Size = new Size(114, 20);
             textBoxNameResult.TabIndex = 0;
             textBoxNameResult.Text = "Результат:";
             // 
             // buttonGetResult
             // 
             buttonGetResult.BackColor = Color.FromArgb(192, 192, 255);
-            buttonGetResult.Location = new Point(1435, 457);
+            buttonGetResult.Location = new Point(1640, 609);
+            buttonGetResult.Margin = new Padding(3, 4, 3, 4);
             buttonGetResult.Name = "buttonGetResult";
-            buttonGetResult.Size = new Size(137, 35);
+            buttonGetResult.Size = new Size(157, 47);
             buttonGetResult.TabIndex = 2;
             buttonGetResult.Text = "Выполнить";
             buttonGetResult.UseVisualStyleBackColor = false;
@@ -113,9 +121,10 @@
             // buttonHelp
             // 
             buttonHelp.BackColor = Color.SkyBlue;
-            buttonHelp.Location = new Point(1357, 457);
+            buttonHelp.Location = new Point(1551, 609);
+            buttonHelp.Margin = new Padding(3, 4, 3, 4);
             buttonHelp.Name = "buttonHelp";
-            buttonHelp.Size = new Size(72, 35);
+            buttonHelp.Size = new Size(82, 47);
             buttonHelp.TabIndex = 3;
             buttonHelp.Text = "Справка";
             buttonHelp.UseVisualStyleBackColor = false;
@@ -124,9 +133,11 @@
             // groupBoxInput
             // 
             groupBoxInput.Controls.Add(dataGridViewMatrix);
-            groupBoxInput.Location = new Point(559, 12);
+            groupBoxInput.Location = new Point(639, 16);
+            groupBoxInput.Margin = new Padding(3, 4, 3, 4);
             groupBoxInput.Name = "groupBoxInput";
-            groupBoxInput.Size = new Size(523, 426);
+            groupBoxInput.Padding = new Padding(3, 4, 3, 4);
+            groupBoxInput.Size = new Size(598, 568);
             groupBoxInput.TabIndex = 4;
             groupBoxInput.TabStop = false;
             groupBoxInput.Text = "Ввод данных";
@@ -137,24 +148,27 @@
             dataGridViewMatrix.AllowUserToDeleteRows = false;
             dataGridViewMatrix.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewMatrix.ColumnHeadersVisible = false;
-            dataGridViewMatrix.Location = new Point(6, 44);
+            dataGridViewMatrix.Location = new Point(7, 59);
+            dataGridViewMatrix.Margin = new Padding(3, 4, 3, 4);
             dataGridViewMatrix.Name = "dataGridViewMatrix";
             dataGridViewMatrix.ReadOnly = true;
             dataGridViewMatrix.RowHeadersVisible = false;
-            dataGridViewMatrix.Size = new Size(511, 370);
+            dataGridViewMatrix.RowHeadersWidth = 51;
+            dataGridViewMatrix.Size = new Size(584, 493);
             dataGridViewMatrix.TabIndex = 0;
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1590, 515);
+            ClientSize = new Size(1817, 687);
             Controls.Add(groupBoxInput);
             Controls.Add(buttonHelp);
             Controls.Add(buttonGetResult);
             Controls.Add(groupBoxOutput);
             Controls.Add(groupBoxTask);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;

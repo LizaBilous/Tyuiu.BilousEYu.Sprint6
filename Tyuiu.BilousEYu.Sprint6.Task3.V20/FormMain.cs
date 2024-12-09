@@ -1,15 +1,15 @@
 ﻿using Tyuiu.BilousEYu.Sprint6.Task3.V20.Lib;
 namespace Tyuiu.BilousEYu.Sprint6.Task3.V20
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
         DataService ds = new DataService();
 
-        int[,] matrix ={{ -14, 17, 19, 3, 2},{ -4,  -14, -19, -9, -1},{ 1, 0, 13, 14, 8},{ 13, 7, 8, -3, -15},{ 2, -20, 12, -14, 4 }};
+        int[,] matrix = { { -14, 17, 19, 3, 2 }, { -4, -14, -19, -9, -1 }, { 1, 0, 13, 14, 8 }, { 13, 7, 8, -3, -15 }, { 2, -20, 12, -14, 4 } };
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
@@ -60,4 +60,6 @@ namespace Tyuiu.BilousEYu.Sprint6.Task3.V20
                     dataGridViewResultMatrix.Rows[i].Cells[j].Value = Convert.ToString(ResultMatrix[i, j]);
                 }
             }
+        }
+    }
 }
