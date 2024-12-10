@@ -105,7 +105,7 @@
             Controls.Add(groupBox1);
             Controls.Add(buttonDone_GDS);
             Name = "FormMain";
-            Text = "\"Спринт 6 | Таск 5 | Вариант 1 | Билоус Е.Ю.\"";
+            Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridViewRes_GDS).EndInit();
             ((System.ComponentModel.ISupportInitialize)chartOut_GDS).EndInit();
             ResumeLayout(false);
@@ -118,7 +118,6 @@
         private DataGridView dataGridViewRes_GDS;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartOut_GDS;
         private Button buttonOutData_GDS;
-    }
 
         #region Windows Form Designer generated code
 
@@ -130,14 +129,14 @@
         {
             SuspendLayout();
             // 
-            // Form1
+            // FromMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Name = "Form1";
+            Name = "FromMain";
             Text = "Form1";
-            Load += Form1_Load;
+            Load += this.FromMain_Load;
             ResumeLayout(false);
         }
 

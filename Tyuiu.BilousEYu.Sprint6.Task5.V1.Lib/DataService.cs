@@ -27,6 +27,7 @@ namespace Tyuiu.BilousEYu.Sprint6.Task5.V1.Lib
                     index++;
                 }
             }
+
             numsArray = numsArray.Where(val => val > 0).ToArray();
 
             return numsArray;

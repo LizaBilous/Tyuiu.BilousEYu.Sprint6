@@ -9,6 +9,7 @@ namespace Tyuiu.BilousEYu.Sprint6.Task5.V1
         }
 
         DataService ds = new DataService();
+
         string path = @"C:\DataSprint5\InPutFileTask5V1.txt";
 
         private void buttonDone_GDS_Click(object sender, EventArgs e)
