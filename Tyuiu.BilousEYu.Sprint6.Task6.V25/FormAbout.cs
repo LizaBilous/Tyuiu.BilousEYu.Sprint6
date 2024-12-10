@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Tyuiu.BilousEYu.Sprint6.Task6.V25.Lib;
 namespace Tyuiu.BilousEYu.Sprint6.Task6.V25
 {
     public partial class FormAbout : Form
@@ -16,12 +15,6 @@ namespace Tyuiu.BilousEYu.Sprint6.Task6.V25
         public FormAbout()
         {
             InitializeComponent();
-        }
-
-            private void buttonOk_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
         }
     }
 }
